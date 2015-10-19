@@ -184,6 +184,8 @@
 	<true/>
 	<key>ProfileCurrentVersion</key>
 	<real>2.04</real>
+	<key>ScrollAlternateScreen</key>
+	<false/>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
