@@ -158,7 +158,7 @@
 	<key>shouldSyncView</key>
 	<true/>
 	<key>showInDock</key>
-	<true/>
+	<false/>
 	<key>showSearchFallbacks</key>
 	<true/>
 	<key>versionedDHCheatRepo</key>
@@ -261,7 +261,7 @@
 				<key>1.7.0</key>
 				<dict>
 					<key>date</key>
-					<date>2016-08-31T15:39:03Z</date>
+					<date>2016-09-27T22:18:42Z</date>
 				</dict>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
@@ -269,7 +269,7 @@
 				<key>2.3.1</key>
 				<dict>
 					<key>date</key>
-					<date>2016-08-31T15:38:26Z</date>
+					<date>2016-09-27T22:20:27Z</date>
 				</dict>
 			</dict>
 		</dict>
