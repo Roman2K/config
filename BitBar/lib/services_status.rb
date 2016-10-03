@@ -1,5 +1,10 @@
 require 'json'
 
+major = RUBY_VERSION[/^(\d)\./, 1] \
+  or raise "failed to fetch Ruby major version number"
+mini = 2; major.to_i >= mini \
+  or raise "required Ruby version: >= %d.0.0" % [mini]
+
 # For mg that requires node
 ENV["PATH"] = "#{ENV.fetch "HOME"}/.ndenv/shims:#{ENV["PATH"]}"
 
