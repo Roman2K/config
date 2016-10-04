@@ -2,8 +2,8 @@
 
 $:.unshift __dir__ + "/lib"
 
-require 'services_status'
+require 'services'
 
-ServicesStatus.print %[
+Services.print %[
   tmux-status-server
 ]

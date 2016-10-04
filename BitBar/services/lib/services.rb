@@ -1,17 +1,14 @@
 require 'json'
 
-major = RUBY_VERSION[/^(\d)\./, 1] \
-  or raise "failed to fetch Ruby major version number"
-mini = 2; major.to_i >= mini \
-  or raise "required Ruby version: >= %d.0.0" % [mini]
-
 # For mg that requires node
 ENV["PATH"] = "#{ENV.fetch "HOME"}/.ndenv/shims:#{ENV["PATH"]}"
 
-module ServicesStatus
+module Services
   def self.print(names)
     json = Dir.chdir ENV.fetch("HOME") + "/code/services" do
-      `./node_modules/.bin/mg status --json`
+      `./node_modules/.bin/mg status --json`.tap do
+        $?.success? or raise "failed to run mg status"
+      end
     end
     info = JSON.parse(json)
     services = info.
