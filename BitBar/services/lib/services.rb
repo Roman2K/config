@@ -53,10 +53,8 @@ module Services
         ['h', i / 3600 % 24],
         ['m', i / 60 % 60],
       ]
-      units.
-        drop_while { |*,n| n == 0 }.
-        map { |u,n| "%d%s" % [n,u] }.
-        join(" ")
+      u,n = units.find {|*,n| n != 0 } || units.last
+      "%d%s" % [n,u]
     end
   end
 
