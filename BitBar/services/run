@@ -1,9 +1,0 @@
-#!/usr/bin/env ruby
-
-$:.unshift __dir__ + "/lib"
-
-require 'services'
-
-Services.print %[
-  tmux-status-server
-]
